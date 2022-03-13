@@ -1,21 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { ScrollView } from 'react-native';
+import HeaderPhone from './components/HeaderPhone';
+import MainPhone from './components/MainPhone';
+import FooterPhone from './components/FooterPhone';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={{backgroundColor:"black"}}>
+      <HeaderPhone/>
+      <MainPhone/>
+      <FooterPhone/>
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
